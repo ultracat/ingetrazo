@@ -104,8 +104,8 @@ def _slope(scene):
 
 
 @pytest.mark.parametrize("curve", [False, True])
-def test_the_top_folds_as_sketchup_does_a_flat_piece_and_one_fan(curve):
-    """SketchUp folds it as one flat triangle (both back corners and the
+def test_the_top_folds_as_a_flat_piece_and_one_fan(curve):
+    """It folds as one flat triangle (both back corners and the
     arc's first end) and one fan from a single back corner over the arc,
     not a fan from each back corner."""
     segments = 12
